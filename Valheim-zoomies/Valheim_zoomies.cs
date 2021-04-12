@@ -24,15 +24,12 @@ namespace Zoomies_mod
             {
                 if (__instance.m_name == "$enemy_deer")
                 {
-                    
-                    log.LogInfo($"Deer speed was: {__instance.m_speed}"); 
-                    __instance.m_speed = 40;
-                    log.LogInfo($"Deer speed is now: {__instance.m_speed}");
-
+                    //This should really be patched inside the awake method.
+                    log.LogInfo($"Deer run speed was:  {__instance.m_runSpeed}");
+                    __instance.m_runSpeed = 0.1f;
+                    log.LogInfo($"Deer run speed is now:  {__instance.m_runSpeed}");
                 }
-                //log.LogInfo($"The speed of the character is: {___m_speed}");
-              //  log.LogInfo($"The instance of the character is: {__instance}");
-              //  log.LogInfo($"The character name is: {__instance.m_name}");
+
             }
         }
     }
